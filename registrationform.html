@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Python4You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body> 
+
+    <section class="navigation w3-metro-light-blue w3-container">
+      <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
+      <nav class="nav-container">
+        <div class="logo w3-padding-large"> 
+          <p style="text-align:right; font-family:forte;">PYTHON4YOU</p>
+        </div>
+      </nav>
+    </section>
+    <section class="w3-panel w3-container content why-us" style="padding: 50px;">
+        <h3 style="color:white;text-align: center;">- REGISTRATION FORM -</h3>
+        <div id="ff-compose"></div>
+<script async defer src="https://formfacade.com/include/108743908141438453010/form/1FAIpQLSc7obpjtBBwYG6fPsNE861qlSv7oeFTo-RVWBZvzLrpPARlBA/classic.js?div=ff-compose"></script>
+      
+    </section>
+
+    <section class="contact w3-container contact" id="contact">
+      <div class="short-contact">
+        <h2>- My contact info - </h2>
+        <div class="w3-large contact-info">
+          <i class="fa fa-address-card"></i><span style="margin-left:10px;color:black">K.Udaysaijaswanth</span><br>
+          <i class="fa fa-envelope"></i><span style="margin-left:10px;color:black">udaysai1320822@gmail.com</span><br>
+          <i class="fa fa-phone-square"></i><span style="margin-left:10px;color:black">+91 8500008388</span><br>
+        </div>
+      </div>
+      
+      </div>
+    </section>
+
+    <section class="w3-container footer">
+      <p class="w3-center logo">All the best</p>
+    </section>
+
+
+  <script async>
+      const backToTop = document.getElementById("back-to-top");
+
+      function toggleMobileNavigation() {
+        const mobileNavigation = document.getElementById("mobile-sidenav");
+        mobileNavigation.classList.toggle('mobile-links-active');
+      }
+
+      function goToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function scroll() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) backToTop.style.display = "block";
+        else backToTop.style.display = "none";
+      }
+
+      window.onscroll = function() {scroll()};
+  </script>
+  
+  </body>
+</html>
